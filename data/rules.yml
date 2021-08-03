@@ -1,0 +1,38 @@
+version: "2.0"
+
+rules:
+
+- rule: Say finding hotels anytime the user says for hotels
+  steps:
+  - intent: find_hotels
+  - action: action_find_hotels
+  
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say hello anytime the user greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: say ok anytine user say anything
+  steps:
+  - intent: ok
+  - action: action_hotel
+
+- rule: say number  
+  steps:
+  - intent: number
+  - action: action_list_hotels
+
+# - rule: Say finding hotels for city only
+#   steps:
+#   - intent: find_hotels/hotels_city_only
+#   - action: action_destination_selection
+# - rule: Say 'I am a bot' anytime the user challenges
+#   steps:
+#   - intent: bot_challenge
+#   - action: utter_iamabot

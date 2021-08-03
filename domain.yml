@@ -1,0 +1,138 @@
+version: "2.0"
+
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 120
+  carry_over_slots_to_new_session: true
+
+
+entities:
+- check_in_date
+- check_out_date
+- destination
+- intent_button
+- rooms
+- people
+slots:
+  hotel_name:
+    type: list
+    influence_conversation: true
+    auto_fill: false
+
+  check_in_date:
+    type: list
+    influence_conversation: true
+    auto_fill: true
+
+  check_out_date:
+    type: list
+    influence_conversation: true
+    auto_fill: true
+    
+  
+  destination:
+    type: list
+    influence_conversation: true
+    auto_fill: true
+
+  intent_button:
+    type: list
+    influence_conversation: true
+    auto_fill: true
+
+  rooms:
+    type: list
+    influence_conversation: true
+    auto_fill: false
+
+  people:
+    type: list
+    influence_conversation: true
+    auto_fill: false
+  
+intents:
+  
+  - faq:
+      use_entities: true
+  - find_hotels:
+      use_entities: true
+  - number:
+      use_entities: true
+
+  - greet
+  - goodbye
+  - ok
+  
+
+
+responses:
+  
+
+  utter_faq/hotels:
+  - text: lol
+
+  utter_find_hotels/hotels_city_only:
+  - text: here hotelskljwjfkc
+
+  utter_find_hotels/check_indate_only:
+  - text: thois ohend
+
+  utter_find_hotels/check_outdate_only:
+  - text: thois ohendkjsjckldvjcf
+
+  utter_find_hotels/check_in_outdate_only:
+  - text: likecnkjdcn
+
+  utter_find_hotels/check_indate_city:
+  - text: iuhuwnfcjdvdf
+
+  utter_find_hotels/check_in_outdate_city:
+  - text: thois ohend iojhiuhffcue
+
+  utter_faq/ask_name:
+  - text: I am a Hotels.com Bot!!
+
+  utter_faq/ask_weather:
+  - text: The weather says me to book a hotel for you!!
+
+  utter_faq/how_can_you_help:
+  - text: how can I help you?
+
+  utter_find_hotels/check_outdate_city:
+  - text: thois ohend iojhiuhffcue
+
+  utter_greet:
+  - text: "Hi! I am a hotels.com chat bot, I can help you with finding hotels."
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_ok:
+  - text: "Perfect!!"
+
+  utter_enter_checkin_date:
+  - text: "Please! provide your Check-in date (yyyy-mm-dd)"
+
+  utter_enter_checkout_date:
+  - text: "Please! provide your Check-out date (yyyy-mm-dd)"
+
+  utter_enter_no_of_people:
+  - text: "Please help me with Number of people!"
+
+  utter_enter_no_of_rooms:
+  - text: "How many Rooms required?"
+
+  utter_number/rooms:
+  - text: "rooms"
+  utter_number/people:
+  - text: "people"
+  
+
+actions:
+- action_find_hotels
+- action_hotel
+- action_list_hotels
+# - action_destination_selection
+forms: {}
+e2e_actions: []

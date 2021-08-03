@@ -1,0 +1,465 @@
+version: "2.0"
+
+nlu:
+
+- intent: faq/hotels
+  examples: |
+    - I need some hotels class info
+    - I want some hotels data
+    - Give me some hotle information please?
+    - Need to search for hotelss
+    - I want to search for some hotelss
+    - Looking for hotels
+    - I need some hotels information
+    - hotelss
+    - I need to see some hotels
+    - Need hotelss bro
+    - hotelss please
+    - How to find the best hotels near me?
+    - Are you able to locate hotels in Berlin for me?
+    - show me the best hotels
+    - any hotels?
+    - hotels bro?
+    - need a hotel to stay
+    - motels on weekends
+    - classic hotels to stay
+    - best hotels near me?
+    - ac hotels near me
+    - hotels having wifi
+    - hotels with parking facility?
+    - apartments for elders?
+    - need a clean  sanitized hotel?
+    - find a hotel which follows covid protocols?
+    - would you please find me a hotel?
+    - hotles with high hospitality
+    - hotls
+    - any room to stay
+    - motels near to me
+    - inn please?
+
+
+- intent: find_hotels/hotels_city_only
+  examples: |
+    - Hotels in [Berlin]{"entity":"destination"}
+    - book hotel in [paris]{"entity":"destination"} for me
+    - can you find hotless in [germany]{"entity":"destination"}
+    - hotels near [time square]{"entity":"destination"}.
+    - [France]{"entity":"destination"}'s hotels.
+    - Hotels in [France]{"entity":"destination"} are many.
+    - Hotel reservations in [Delhi]{"entity":"destination"}
+    - Hotels in [Delhi]{"entity":"destination"} are available for reservation.
+    - Hotels in [Delhi]{"entity":"destination"} can be booked online.
+    - What kind of hotels can you find in [Rajasthan]{"entity":"destination"}?
+    - In [Rajasthan]{"entity":"destination"}, what kind of hotels are there?
+    - What hotels can you find in [Rajasthan]{"entity":"destination"}?
+    - Is it possible for you to locate hotels in [Berlin]{"entity":"destination"} for me?
+    - Are you able to locate hotels in [Berlin]{"entity":"destination"} for me?
+    - Can you locate hotels in [Berlin]{"entity":"destination"} for me?
+    - hotels near [delhi]{"entity":"destination"}
+    - how to stay in [delhi]{"entity":"destination"}
+    - [luckhnow] holets{"entity":"destination"}
+    - hotels near by [delhi airport]{"entity":"destination"}
+    - [delhi] costly hotles{"entity":"destination"}
+    - anything to stay near [paris]{"entity":"destination"}
+    - can you help to find out the hotels in [france]{"entity":"destination"}
+    - find hotels in [korea]{"entity":"destination"}
+    - hotels in [rajasthan]{"entity":"destination"}
+    - rooms to saty in [berlin]{"entity":"destination"}
+    - inn in [paris]{"entity":"destination"}
+    - could you figure me out how to stay in [jaipur]{"entity":"destination"}
+    - what about staying in [jaipur]{"entity":"destination"}
+    - hotels in [delhi]{"entity":"destination"} only
+    - hotels near [berlin]{"entity":"destination"}
+    - find a beautiful suite in [delhi]{"entity":"destination"}
+    - hotels is [kolkata]{"entity":"destination"} bro
+    - top hoteels in [kolkata]{"entity":"destination"}
+    - environmental friendly hotels in [delhi]{"entity":"destination"}
+    - hotels outside to [chandigarh]{"entity":"destination"}
+    - reserve a hotel in [jaipur]{"entity":"destination"}
+    - any inns can be prebooked in [delhi]{"entity":"destination"}
+    - best and cheap hotels in [patna]{"entity":"destination"}
+    - hotels near by [redfort]{"entity":"destination"}
+    - hotels with best view in [goa]{"entity":"destination"}
+    - hotels near to [delhi-jaipur highway]{"entity":"destination"}
+    - [lockdown]{"entity":"destination"} rooms stay
+    - hey help me out to stay in [patna]{"entity":"destination"}
+
+
+- intent: find_hotels/check_indate_only
+  examples: |
+    - book me a hotel for [2021-11-25]{"entity":"check_in_date"}
+    - hotels available on [2021-08-18]{"entity":"check_in_date"}
+    - i want to check in on [2021-07-30]{"entity":"check_in_date"}
+    - i want a hotel on [20-09-2021]{"entity":"check_in_date"}
+    - book a hotel on [20-09-2021]{"entity":"check_in_date"} 
+    - checkin as [20-09-2021]{"entity":"check_in_date"} in any hotel
+    - hotel stay starts from [20-09-2021]{"entity":"check_in_date"}
+    - stay in a hotel from [20-09-2021]{"entity":"check_in_date"}
+    - [20-09-2021]{"entity":"check_in_date"} hotels 
+    - i would like to check in a hotel on [20-09-2021]{"entity":"check_in_date"}
+    - is there any hotel availble on [20-09-2021]{"entity":"check_in_date"}
+    - how about [20-09-2021]{"entity":"check_in_date"} in a hotel
+    - bro hoteel on [11 september 2019]{"entity":"check_in_date"}
+    - best hotel to stay in on [9 april 2013]{"entity":"check_in_date"}
+    - The best place to stay on [20-09-2021]{"entity":"check_in_date"}
+    - The best accommodation to stay on [15 march 2021]{"entity":"check_in_date"}.
+    - On [20 september 2021]{"entity":"check_in_date"}, the best hotel to stay in 
+    - on the [20 September 2021]{"entity":"check_in_date"}, the finest hotel to stay in
+    - the best hotel to spend time on [20-09-2021]{"entity":"check_in_date"}.
+    - Cheapest hotel to stay on [20-09-2021]{"entity":"check_in_date"}.
+    - the best hotel left on [20-09-2021]{"entity":"check_in_date"}.
+    - the best hotel to stay in of [20-09-2021]{"entity":"check_in_date"}.
+    - Hotel on [20-09-2021]{"entity":"check_in_date"}.
+    - checkin on [20-09-2021]{"entity":"check_in_date"} in hotel
+    - [20-09-2021]{"entity":"check_in_date"} hotel
+    - login to any hotel on [29 dec 2019]{"entity":"check_in_date"}
+    - hotels [20-09-2021]{"entity":"check_in_date"}
+    - hotels on [20-09-2021]{"entity":"check_in_date"} 
+    - [20-09-2021]{"entity":"check_in_date"} hotels bro
+    - hi hotels [30 jan 2022]{"entity":"check_in_date"}
+    - hotels [20-09-2021]{"entity":"check_in_date"}
+    - checkin [20-09-2021]{"entity":"check_in_date"} 
+    - i would like to view the hotels available on [4 februray 2019]{"entity":"check_in_date"} 
+    - from [15 august 2021]{"entity":"check_in_date"} 
+    - by [april 19]{"entity":"check_in_date"} 
+    - [5th march]{"entity":"check_in_date"} 
+    - [23 jan 2019]{"entity":"check_in_date"} 
+    - [03 december 2022]{"entity":"check_in_date"}
+    - from [8 october2012]{"entity":"check_in_date"} 
+    - [1/12/20]{"entity":"check_in_date"} 
+    - [19/8/22]{"entity":"check_in_date"}
+    - from [1 august 2021]{"entity":"check_in_date"} 
+    - by [april 21]{"entity":"check_in_date"} 
+    - [7th march]{"entity":"check_in_date"} 
+    - [2 jan 2019]{"entity":"check_in_date"} 
+    - [03 december 2021]{"entity":"check_in_date"}
+    - from [9 october2012]{"entity":"check_in_date"} 
+    - [1/1/20]{"entity":"check_in_date"} 
+    - [1/8/22]{"entity":"check_in_date"} 
+    - [18th june]{"entity":"check_in_date"} 
+    - [march 19 2021]{"entity":"check_in_date"} 
+    - [december 31 2021]{"entity":"check_in_date"} 
+    - [30th june]{"entity":"check_in_date"} 
+
+- intent: find_hotels/check_outdate_only
+  examples: |
+    - book me a hotel till [2021-11-25]{"entity":"check_out_date"}
+    - check-out date  [2021-08-18]{"entity":"check_out_date"}
+    - i want to check out on [2021-07-30]{"entity":"check_out_date"}
+    - i want a hotel to checkout on [20-09-2021]{"entity":"check_out_date"}
+    - book a hotel checkout on [20-09-2021]{"entity":"check_out_date"} 
+    - checkout as [20-09-2021]{"entity":"check_out_date"} in any hotel
+    - hotel stay ends on [20-09-2021]{"entity":"check_out_date"}
+    - stay out a hotel from [20-09-2021]{"entity":"check_out_date"}
+    - [20-09-2021]{"entity":"check_out_date"} hotels to checkout
+    - i would like to check out a hotel in on [20-09-2021]{"entity":"check_out_date"}
+    - is there any hotel availble to checkout on [20-09-2021]{"entity":"check_out_date"}
+    - how about [20-09-2021]{"entity":"check_out_date"} to checkout in a hotel
+    - bro hoteel on [20-09-2021]{"entity":"check_out_date"} to checkout
+    - best hotel to stay out on [20-09-2021]{"entity":"check_out_date"}
+    - The best place to stay iout to checkout by [20-09-2021]{"entity":"check_out_date"}.
+    - The best accommodation to checkout on [20-09-2021]{"entity":"check_out_date"}.
+    - On [20 september 2021]{"entity":"check_out_date"}, the best hotel to stay in outside
+    - by [20 september 2021]{"entity":"check_out_date"}, the best hotel to stay at out
+    - the best hotel to spend time in and checkouit [20-09-2021]{"entity":"check_out_date"}.
+    - Cheapest hotel to stay in and checkout by [20-09-2021]{"entity":"check_out_date"}.
+    - the best hotel left in on [20-09-2021]{"entity":"check_out_date"}.
+    - the best hotel to stay in out of [20-09-2021]{"entity":"check_out_date"}.
+    - Hotel located in on to checkoout [20-09-2021]{"entity":"check_out_date"}.
+    - checkout on [20-09-2021]{"entity":"check_out_date"} in hotel
+    - [20-09-2021]{"entity":"check_out_date"} hotel checkout
+    - logout to hotel on [20-09-2021]{"entity":"check_out_date"}
+    - hotels checkoutt [20-09-2021]{"entity":"check_out_date"}
+    - hotels to checkout by [20-09-2021]{"entity":"check_out_date"} 
+    - [20-09-2021]{"entity":"check_out_date"} hotels checkout
+    - hi hotels [20-09-2021]{"entity":"check_out_date"} checkout
+    - hotels [20-09-2021]{"entity":"check_out_date"} checkout bro
+    - checkout [20-09-2021]{"entity":"check_out_date"} delhi
+    - i would like to view the hotels available to checkout by [20-09-2021]{"entity":"check_out_date"}
+    - till [15 august 2021]{"entity":"check_out_date"} 
+    - to [april 19]{"entity":"check_out_date"} 
+    - [5th march]{"entity":"check_out_date"}
+    - [23 jan 2019]{"entity":"check_out_date"} 
+    - [03 december 2022]{"entity":"check_out_date"}
+    - until [8 october2012]{"entity":"check_out_date"} 
+    - [1/12/20]{"entity":"check_out_date"} 
+    - [19/8/22]{"entity":"check_out_date"}
+    - till [1 august 2021]{"entity":"check_out_date"} 
+    - until [april 21]{"entity":"check_out_date"} 
+    - [7th march]{"entity":"check_out_date"} 
+    - [2 jan 2019]{"entity":"check_out_date"} 
+    - [03 december 2021]{"entity":"check_out_date"}
+    - till [9 october2012]{"entity":"check_out_date"} 
+    - [1/1/20]{"entity":"check_out_date"} 
+    - [1/8/22]{"entity":"check_out_date"} 
+    - [18th june]{"entity":"check_out_date"} 
+    - [march 19 2021]{"entity":"check_out_date"} 
+    - [december 31 2021]{"entity":"check_out_date"} 
+    - [30th june]{"entity":"check_out_date"}
+
+- intent: find_hotels/check_in_outdate_only
+  examples: |
+    - find hotels for [2021-08-29]{"entity":"check_in_date","role":"from"} till [2021-09-03]{"entity":"check_out_date","role":"till"}
+    - check in date [2021-08-29]{"entity":"check_in_date","role":"from"} and check out on [2021-09-03]{"entity":"check_out_date","role":"till"}
+    - I'd like to reserve a hotel room from [August 18]{"entity":"check_in_date","role":"from"} to [August 29 2021]{"entity":"check_out_date","role":"till"}.
+    - From [2021-08-18]{"entity":"check_in_date","role":"from"} to [2021-08-29]{"entity":"check_out_date","role":"till"}, I'd like to book a hotel room.
+    - I'd like to book a hotel for the dates [2021-08-18]{"entity":"check_in_date","role":"from"} through [2021-08-29]{"entity":"check_out_date","role":"till"}.
+    - I'd like to reserve a hotel room from [August 18]{"entity":"check_in_date","role":"from"} to [August 29 2021]{"entity":"check_out_date","role":"till"}.
+    - From [2021-08-18]{"entity":"check_in_date","role":"from"} to [2021-08-29]{"entity":"check_out_date","role":"till"}, I'd like to book a hotel room.
+    - i want a hotel on [20-09-2021]{"entity":"check_in_date","role":"from"} and checkout by [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - book a hotel on [20-09-2021]{"entity":"check_in_date","role":"from"} checkout by [22-09-2021]{"entity":"check_out_date","role":"till"} 
+    - checkin as [20-09-2021]{"entity":"check_in_date","role":"from"} checkout by [22-09-2021]{"entity":"check_out_date","role":"till"} 
+    - sign in in an inn on [20-09-2021]{"entity":"check_in_date","role":"from"} and signout by [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - hotel stay starts from [20-09-2021]{"entity":"check_in_date","role":"from"} and ends by [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - stay in a hotel from [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"} hotels 
+    - i would like to check in a hotel in on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - is there any hotel availble on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - how about [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"} in a hotel 
+    - bro hoteel on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - best hotel to stay on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - The best place to stay on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - The best accommodation to stay on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - On [20 September 2021]{"entity":"check_in_date","role":"from"} to [22 September 2021] {"entity":"check_out_date","role":"till"}the best hotel to stay in 
+    - on the [20 September 2021]{"entity":"check_in_date","role":"from"} to [22 september 2021]{"entity":"check_out_date","role":"till"} the finest hotel to stay
+    - the best hotel to spend time on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - Cheapest hotel to stay on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - the best hotel left on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - the best hotel to stay out of [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - Hotel located in on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - checkin on [20-09-2021]{"entity":"check_in_date","role":"from"} and checkout by [22-09-2021] in hotel{"entity":"check_out_date","role":"till"}
+    - [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021] hotel{"entity":"check_out_date","role":"till"}
+    - login to any hotel on [20-09-2021]{"entity":"check_in_date","role":"from"} and logout by [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - hotels [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - hotels on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"} nearby 
+    - [20-09-2021]{"entity":"check_in_date","role":"from"} and [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - hi hotels [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - hotels [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"}
+    - checkin [20-09-2021]{"entity":"check_in_date","role":"from"} an checkout by [22-09-2021]{"entity":"check_out_date","role":"till"} bro
+    - i would like to view the hotels available on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"} 
+
+
+- intent: find_hotels/check_indate_city
+  examples: |
+    - i want a hotel in [germany]{"entity":"destination"}  on [2021-09-03]{"entity":"check_in_date"}
+    - hotels in [france]{"entity":"destination"}  for [2021-09-03]{"entity":"check_in_date"}
+    - find me near by hotels to [delhi airport]{"entity":"destination"}  for [2021-12-30]{"entity":"check_in_date"}
+    - hotels in [new york]{"entity":"destination"}  for [January 1st]{"entity":"check_in_date"}
+    - i want a hotel on [20-09-2021]{"entity":"check_in_date"} in [punjab]{"entity":"destination"}
+    - book a hotel on [dece 12 2023]{"entity":"check_in_date"} in [amritsar]{"entity":"destination"}
+    - checkin as [20-09-2021]{"entity":"check_in_date"} in any [deelhi]{"entity":"destination"} hotel
+    - hotel stay starts from [1st jan 2022]{"entity":"check_in_date"} in [melbourne]{"entity":"destination"}
+    - stay in a hotel from [01/01/22]{"entity":"check_in_date"} in [madhya pradesh]{"entity":"destination"}
+    - [20-09-2021]{"entity":"check_in_date"} hotels [gujrat]{"entity":"destination"}
+    - i would like to check in a hotel in a [jodhpur]{"entity":"destination"} on [2021-12-03]{"entity":"check_in_date"}
+    - is there any hotel availble on [20-09-2021]{"entity":"check_in_date"} in [italy]{"entity":"destination"}
+    - how about [01-09-2023]{"entity":"check_in_date"} in a hotel in [south korea]{"entity":"destination"}
+    - bro hoteel on [20-09-2021]{"entity":"check_in_date"} [delhi airport]{"entity":"destination"} mey
+    - best hotel to stay in [kashmir]{"entity":"destination"} on [19th july 2020]{"entity":"check_in_date"}
+    - The best place to stay in [Delhi]{"entity":"destination"} on [may 15 2019]{"entity":"check_in_date"}.
+    - The best accommodation to stay in [jammu]{"entity":"destination"} on [2019-2-19]{"entity":"check_in_date"}.
+    - On [September 20 2021]{"entity":"check_in_date"}, the best hotel to stay in [bhopal]{"entity":"destination"} is
+    - on the [20th of September 2021]{"entity":"check_in_date"}, the finest hotel to stay in [usa]{"entity":"destination"}
+    - the best hotel to spend time in [india]{"entity":"destination"} on [19/2/22]{"entity":"check_in_date"}.
+    - Cheapest hotel to stay in [maldieves]{"entity":"destination"} on [20-09-2021]{"entity":"check_in_date"}.
+    - the best hotel left in [ajmer]{"entity":"destination"} on [march 19 2021]{"entity":"check_in_date"}.
+    - the best hotel to stay in [Delhi]{"entity":"destination"} out of [20-09-2021]{"entity":"check_in_date"}.
+    - Hotel located in [Dehradun]{"entity":"destination"} on [20-09-2021]{"entity":"check_in_date"}.
+    - checkin on [20-09-2021]{"entity":"check_in_date"} in hotel [dehradun]{"entity":"destination"}
+    - [10-10-2021]{"entity":"check_in_date"} hotelv [patiala]{"entity":"destination"}
+    - login to any hotel on [20-09-2021]{"entity":"check_in_date"} [delhi]{"entity":"destination"}
+    - checkin [20-09-2021]{"entity":"check_in_date"} [bihar]{"entity":"destination"}
+    
+
+- intent: find_hotels/check_outdate_city
+  examples: |
+    - i will leave [berlin]{"entity":"destination"} on [22nd july 2021]{"entity":"check_out_date"} get me a hotel
+    - my check out date is [14th nov 2021]{"entity":"check_out_date"} from [new york]{"entity":"destination"}.
+    - i want to check out by [dec 20 2021]{"entity":"check_out_date"} for my flight from [delhi airport]{"entity":"destination"}
+    - i want a hotel to checkout on [20-09-2021]{"entity":"check_out_date"} from [uttar pradesh]{"entity":"destination"}
+    - book a hotel in [bhuvneshwar]{"entity":"destination"} checkout on [12 augst 2023]{"entity":"check_out_date"} 
+    - checkout as [20-09-2021]{"entity":"check_out_date"} in any hotel from [redfort]{"entity":"destination"}
+    - hotel stay ends on [30-09-2021]{"entity":"check_out_date"} in [manglore]{"entity":"destination"}
+    - stay out a hotel from [20-09-2021]{"entity":"check_out_date"} in [banglore]{"entity":"destination"}
+    - [12 march 2019]{"entity":"check_out_date"} hotels to checkout in [chandigarh]{"entity":"destination"}
+    - i would like to check out a hotel in on [20-09-2021]{"entity":"check_out_date"} in [golden temple]{"entity":"destination"}
+    - is there any hotel availble to checkout on [20-09-2021]{"entity":"check_out_date"} in [amritsar]{"entity":"destination"}
+    - how about [20-09-2021]{"entity":"check_out_date"} to checkout in a hotel in [amritsar]{"entity":"destination"}
+    - bro hoteel on [1st may]{"entity":"check_out_date"} to checkout in [amritsar]{"entity":"destination"}
+    - best hotel to stay out on [27/11/2021]{"entity":"check_out_date"} in [los angeles]{"entity":"destination"}
+    - The best place to stay iout to checkout by [15 may 2022]{"entity":"check_out_date"} in [france]{"entity":"destination"}
+    - The best accommodation to checkout on [20-09-2021]{"entity":"check_out_date"} in [jaipur]{"entity":"destination"}
+    - On [September 20 2021]{"entity":"check_out_date"}, the best hotel to stay in outside in [berlin]{"entity":"destination"}
+    - by [September 20 2021]{"entity":"check_out_date"}, the best hotel to stay at out in [paris]{"entity":"destination"}
+    - the best hotel to spend time in and checkouit [20-09-2021]{"entity":"check_out_date"} in [gujrat]{"entity":"destination"}
+    - Cheapest hotel to stay in and checkout by [20-09-2021]{"entity":"check_out_date"} in [delhi]{"entity":"destination"}
+    - the best hotel left in on [20-09-2021]{"entity":"check_out_date"} in [france]{"entity":"destination"}
+    - the best hotel to stay in out of [20-09-2021]{"entity":"check_out_date"} in [london]{"entity":"destination"}
+    - Hotel located in on to checkoout [20-09-2021]{"entity":"check_out_date"} in [london]{"entity":"destination"}
+    - checkout on [20-09-2021]{"entity":"check_out_date"} from hotel in [london]{"entity":"destination"}
+    - [20-09-2021]{"entity":"check_out_date"} hotel checkout [manglore]{"entity":"destination"}
+    - checkout [20-09-2021]{"entity":"check_out_date"} from [berlin]{"entity":"destination"}
+    - checkout [20-09-2021]{"entity":"check_out_date"} from [paris]{"entity":"destination"}
+    - checkout [20-09-2021]{"entity":"check_out_date"} from [france]{"entity":"destination"}
+    
+- intent: find_hotels/check_in_outdate_city
+  examples: |
+    - i am looking for hotel in [gujrat]{"entity":"destination"}  from [2021-08-29]{"entity":"check_in_date","role":"from"} till {"entity":"check_out_date","role":"till"}
+    - what hotels ate available from [2021-08-29]{"entity":"check_in_date","role":"from"} to [2021-09-03]{"entity":"check_out_date","role":"till"} in [paris]{"entity":"destination"} 
+    - find me a hotel near [seoul olympic stadium]{"entity":"destination"} start from [2021-11-29]{"entity":"check_in_date","role":"from"} till [2021-12-03]{"entity":"check_out_date","role":"till"}
+    - hotels in [melbourne]{"entity":"destination"}, [2021-10-19]{"entity":"check_out_date","role":"till"}, [2021-10-15]{"entity":"check_in_date","role":"from"}
+    - i want a hotel on [10-09-2022]{"entity":"check_in_date","role":"from"} and checkout by [12-09-2022]{"entity":"check_out_date","role":"till"} in [delhi]{"entity":"destination"}
+    - book a hotel on [2021-11-12]{"entity":"check_in_date","role":"from"} checkout by [2021-11-13]{"entity":"check_out_date","role":"till"} in [udaipur]{"entity":"destination"}
+    - checkin as [4/3/23]{"entity":"check_in_date","role":"from"} checkout by [13/3/23]{"entity":"check_out_date","role":"till"} in [mumbai]{"entity":"destination"}
+    - sign in in an inn on [1 september 22]{"entity":"check_in_date","role":"from"} and signout [5 september 22]{"entity":"check_out_date","role":"till"} in [kolkata]{"entity":"destination"}
+    - hotel stay starts from [december 3 2021]{"entity":"check_in_date","role":"from"} and ends by [december 6 2021]{"entity":"check_out_date","role":"till"} in [mumbai]{"entity":"destination"}
+    - stay in a hotel from [20 sept 2021]{"entity":"check_in_date","role":"from"} to [22 sept 2021]{"entity":"check_out_date","role":"till"} in [patna]{"entity":"destination"}
+    - [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"} hotels [paris]{"entity":"destination"}
+    - i would like to check in a hotel in on [2021-11-12]{"entity":"check_in_date","role":"from"} to [2021-11-15]{"entity":"check_out_date","role":"till"} in [jaipur]{"entity":"destination"}
+    - is there any hotel availble on [14/3/22]{"entity":"check_in_date","role":"from"} to [24/3/22]{"entity":"check_out_date","role":"till"} in [berlin]{"entity":"destination"}
+    - how about [30 December 21]{"entity":"check_in_date","role":"from"} to [1 jan 22]{"entity":"check_out_date","role":"till"} in a hotel in [france]{"entity":"destination"}
+    - bro hoteel on [june 3 2021]{"entity":"check_in_date","role":"from"} to [june 13 2021]{"entity":"check_out_date","role":"till"} in [melbourne]{"entity":"destination"}
+    - best hotel to stay on [20 july 2021]{"entity":"check_in_date","role":"from"} to [24 july 2021]{"entity":"check_out_date","role":"till"} in [delhi]{"entity":"destination"}
+    - The best place to stay on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"} in [gujrat]{"entity":"destination"}
+    - The best accommodation to stay on [2021-10-23]{"entity":"check_in_date","role":"from"} to [2021-10-26]{"entity":"check_out_date","role":"till"} in [punjab]{"entity":"destination"}
+    - On [September 20 2021]{"entity":"check_in_date","role":"from"} to [22 September 2021]{"entity":"check_out_date","role":"till"} the best hotel to stay in in [italy]{"entity":"destination"}
+    - on the [14/6/23]{"entity":"check_in_date","role":"from"} to [15/6/23]{"entity":"check_out_date","role":"till"} the finest hotel to stay in [rome]{"entity":"destination"}
+    - the best hotel to spend time on [20 july 2021]{"entity":"check_in_date","role":"from"} to [24 july 2021]{"entity":"check_out_date","role":"till"} in [Usa]{"entity":"destination"}
+    - Cheapest hotel to stay on [2021-10-23]{"entity":"check_in_date","role":"from"} to [2021-10-23]{"entity":"check_out_date","role":"till"} in [france]{"entity":"destination"}
+    - the best hotel left on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"} in [berlin]{"entity":"destination"}
+    - the best hotel to stay out of [june 3 2021]{"entity":"check_in_date","role":"from"} to [june 13 2021]{"entity":"check_out_date","role":"till"} in [mumbai]{"entity":"destination"}
+    - Hotel located in on [1 september 22]{"entity":"check_in_date","role":"from"} to [6 september 22]{"entity":"check_out_date","role":"till"} in [chandigarh]{"entity":"destination"}
+    - checkin on [20-09-2021]{"entity":"check_in_date","role":"from"} and checkout by [22-09-2021]{"entity":"check_out_date","role":"till"} in hotel in [lukhnow]{"entity":"destination"}
+    - [2021-11-12]{"entity":"check_in_date","role":"from"} to [2021-11-15]{"entity":"check_out_date","role":"till"} hotel in [kolkata]{"entity":"destination"}
+    - login to any hotel on [15/6/23]{"entity":"check_in_date","role":"from"} and logout by [21/6/23]{"entity":"check_out_date","role":"till"} in [bhopal]{"entity":"destination"}
+    - hotels [june 13 2021]{"entity":"check_in_date","role":"from"} to [june 15 2021]{"entity":"check_out_date","role":"till"} in [germany]{"entity":"destination"}
+    - hotels on [june 3 2021]{"entity":"check_in_date","role":"from"} to [june 13 2021]{"entity":"check_out_date","role":"till"} nearby  in [goa]{"entity":"destination"}
+    - [14/6/23]{"entity":"check_in_date","role":"from"} and [15/6/23]{"entity":"check_out_date","role":"till"} [bihar]{"entity":"destination"}
+    - hi hotels [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"} in [france]{"entity":"destination"}
+    - hotels [30 December 21]{"entity":"check_in_date","role":"from"} to [1 jan 22]{"entity":"check_out_date","role":"till"} in [south korea]{"entity":"destination"}
+    - checkin [20-09-2021]{"entity":"check_in_date","role":"from"} an checkout by [22-09-2021]{"entity":"check_out_date","role":"till"} bro in [south korea]{"entity":"destination"}
+    - i would like to view the hotels available on [20-09-2021]{"entity":"check_in_date","role":"from"} to [22-09-2021]{"entity":"check_out_date","role":"till"} in [berlin]{"entity":"destination"}
+
+- intent: faq/ask_name
+  examples: |
+    - What is your name?
+    - May I know your name?
+    - What do people call you?
+    - Do you have a name for yourself?
+
+- intent: faq/ask_weather
+  examples: |
+    - What's the weather like today?
+    - Does it look sunny outside today?
+    - Oh, do you mind checking the weather for me please?
+    - I like sunny days in Berlin.
+
+
+- intent: faq/how_can_you_help
+  examples: |
+    - how can i get benefitted by booking tickets from here
+    - what is benefit for me
+    - are there any discounts for me 
+    - will Travel-bot.com give me some additional discounts
+    - how's travel-bot helping others so that it can help me
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: ok
+  examples: |
+    - ok
+    - k
+    - perfect
+    - fine
+    - great
+    - done
+
+- intent: number/rooms
+  examples: |
+    - [1]{"entity":"rooms"}
+    - [2]{"entity":"rooms"}
+    - [3]{"entity":"rooms"}
+    - [4]{"entity":"rooms"}
+    - [5]{"entity":"rooms"}
+    - [6]{"entity":"rooms"}
+    - [7]{"entity":"rooms"}
+    - [8]{"entity":"rooms"}
+    - [9]{"entity":"rooms"}
+    - [10]{"entity":"rooms"}
+    - [two]{"entity":"rooms"} rooms
+    - [3]{"entity":"rooms"} rooms
+    - [four]{"entity":"rooms"}
+    - [five]{"entity":"rooms"}
+    - [6]{"entity":"rooms"}
+    - [7]{"entity":"rooms"}
+    - [two]{"entity":"rooms"}
+    - [three]{"entity":"rooms"}
+    - [twelve]{"entity":"rooms"}
+    - [six]{"entity":"rooms"}
+    - rooms for [2]{"entity":"rooms"}
+    - rooms for [three]{"entity":"rooms"} people
+    - room for [1]{"entity":"rooms"}
+    - room for [one]{"entity":"rooms"} person
+    - rooms for [ten]{"entity":"rooms"}
+
+- intent: number/people
+  examples: |
+    - [1]{"entity":"people"}
+    - [2]{"entity":"people"}
+    - [3]{"entity":"people"}
+    - [4]{"entity":"people"}
+    - [5]{"entity":"people"}
+    - [6]{"entity":"people"}
+    - [7]{"entity":"people"}
+    - [8]{"entity":"people"}
+    - [9]{"entity":"people"}
+    - [10]{"entity":"people"}
+    - [four]{"entity":"people"}
+    - [one]{"entity":"people"}
+    - [two]{"entity":"people"}
+    - [three]{"entity":"people"}
+    - [twelve]{"entity":"people"}
+    - [six]{"entity":"people"}
+    - [four]{"entity":"people"} ppl
+    - [five]{"entity":"people"} peeople 
+    - [6]{"entity":"people"} peoplee 
+    - [eight]{"entity":"people"}
+    - [twelve]{"entity":"people"} perople
+    - [8]{"entity":"people"} people
+    - [11]{"entity":"people"} people
+    - group of [six]{"entity":"people"}
+    - family of [four]{"entity":"people"} people
+    - grp of [five]{"entity":"people"} ppl
+    - [12]{"entity":"people"} peoples
+
+    
+
+

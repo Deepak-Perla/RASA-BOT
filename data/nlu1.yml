@@ -1,0 +1,201 @@
+# version: "2.0"
+
+# nlu:
+# - intent: greet
+#   examples: |
+#     - hey
+#     - hello
+#     - hi
+#     - hello there
+#     - good morning
+#     - good evening
+#     - moin
+#     - hey there
+#     - let's go
+#     - hey dude
+#     - goodmorning
+#     - goodevening
+#     - good afternoon
+
+# - intent: goodbye
+#   examples: |
+#     - good afternoon
+#     - cu
+#     - good by
+#     - cee you later
+#     - good night
+#     - bye
+#     - goodbye
+#     - have a nice day
+#     - see you around
+#     - bye bye
+#     - see you later
+
+# - intent: affirm
+#   examples: |
+#     - yes
+#     - y
+#     - indeed
+#     - of course
+#     - that sounds good
+#     - correct
+
+# - intent: deny
+#   examples: |
+#     - no
+#     - n
+#     - never
+#     - I don't think so
+#     - don't like that
+#     - no way
+#     - not really
+
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
+
+# - intent: mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
+
+# - intent: bot_challenge
+#   examples: |
+#     - are you a bot?
+#     - are you a human?
+#     - am I talking to a bot?
+#     - am I talking to a human?
+
+# - intent: faq/vehicle
+#   examples: |
+#     - I need some flight class info
+#     - I want some flight data
+#     - Give me some train information please?
+#     - Need to search for flights
+#     - I want to search for some flights
+#     - Looking for flights
+#     - I need some flight information
+#     - Flights
+#     - I need to see some flights
+#     - Need flights bro
+#     - Flights please
+#     - I need some flight Information
+#     - what is the least expensive flight from denver to atlanta
+#     - list all flights from [indianapolis](city/country) to [seattle](city/country)
+#     - show me the airlines with first class flights
+#     - what are the flights from [st. louis](city/country) to [burbank](city/country) sunday evening
+#     - i'd like to arrange a flight from [pittsburgh](city/country) to [atlanta](city/country)
+#     - show flights from [baltimore](city/country) to [san francisco](city/country) between 6 pm and 8 pm on friday
+
+# - intent: faq/hotels
+#   examples: |
+#     - what are the hotels in jaipur?
+#     - I need some hotels class info
+#     - I want some hotels data
+#     - Give me some hotle information please?
+#     - Need to search for hotelss
+#     - I want to search for some hotelss
+#     - Looking for hotels
+#     - I need some hotels information
+#     - hotelss
+#     - I need to see some hotels
+#     - Need hotelss bro
+#     - hotelss please
+#     - How to find the best hotels near me?
+
+# - intent: faq/hotels_city_only
+
+# # - intent: faq/website
+#   examples: |
+#     - Can I book international flight tickets on MakeMyTrip?
+#     - How can I avail cheap international flight tickets on MakeMyTrip?
+#     - How does MakeMyTrip offer cheap international air tickets?
+    
+# # - intent: faq/trips
+#   examples: |
+#     - upcoming trips
+#     - how to arrange a trip to [seoul](city)
+#     - all trips for summers
+#     - trps to mannali
+#     - most requested trips
+
+# - intent: faq/package
+#   examples: |
+#     - cheapest package to [newyork](city/country)
+#     - what all pckgs available for winters
+#     - highest rated packages
+#     - does package contains food and flight
+    
+# - intent: faq/offers
+#   examples: |
+#     - end of season offers
+#     - winters offerss
+#     - 4th of july ofers
+#     - do we have any offer?
+#     - I need some offers class info
+#     - I want some offers data
+#     - Give me some hotle information please?
+#     - Need to search for offerss
+#     - I want to search for some offerss
+#     - Looking for offrs
+#     - I need some ofers information
+#     - offerss
+#     - I need to see some offers
+#     - Need offerss bro
+#     - offerss please
+
+# - intent: faq/ask_name
+#   examples: |
+#     - What is your name?
+#     - May I know your name?
+#     - What do people call you?
+#     - Do you have a name for yourself?
+
+# - intent: faq/ask_weather
+#   examples: |
+#     - What's the weather like today?
+#     - Does it look sunny outside today?
+#     - Oh, do you mind checking the weather for me please?
+#     - I like sunny days in Berlin.
+
+
+# - intent: faq/how_can_you_help
+#   examples: |
+#     - how can i get benefitted by booking tickets from here
+#     - what is benefit for me
+#     - are there any discounts for me 
+#     - will Travel-bot.com give me some additional discounts
+#     - how's travel-bot helping others so that it can help me
+
+# - intent: faq/food_help
+#   examples: |
+#     - will food be provided
+#     - do travel-bot provide us additional meals
+#     - When i book tickerts through you will i geet some additonal meals at say landing
+#     - do you provide any food discount
+#     - if i use your website will i get some discount on food

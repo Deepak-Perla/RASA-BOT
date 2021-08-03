@@ -1,0 +1,113 @@
+version: "2.0"
+
+stories:
+
+# - story: all provided
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: find_hotels
+#   - action: action_destination_selection      #this action have all functions
+#   - intent: ok
+#   - action: utter_ok
+#   - action: utter_enter_no_of_people
+#   - intent: number_people
+#   - action: utter_ok
+#   - action: utter_enter_no_of_rooms
+#   - intent: number_rooms
+#   - action: utter_ok
+#   - action: action_hotel_selection
+#   - intent: ok
+#   - action: utter_ok
+#   - intent: goodbye
+#   - action: utter_goodbye
+
+
+# - story: happypath
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: find_hotels
+#   - action: action_find_hotels      #this action have all functions
+#   - action: utter_enter_no_of_rooms
+
+# - story: checkin_out provides # only dates given city to be asked
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: check_in_outdate_city
+#   - action: action_destination_selection
+#   - intent: ok
+#   - action: utter_ok
+#   - intent: goodbye
+#   - action: utter_goodbye
+
+
+# - story: city only provides # only city given {to ask: checkin-out dates, number of people, rooms}
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: find_hotels/hotels_city_only
+#   - action: action_destination_selection
+#   - intent: ok
+#   - action: utter_ok
+#   - action: utter_enter_checkin_date
+#   - intent: find_hotels/check_indate_only
+#   - action: utter_ok
+#   - action: utter_enter_checkout_date
+#   - intent: find_hotels/check_outdate_only
+#   - action: utter_ok
+#   - action: utter_enter_no_of_people
+#   - intent: number_people
+#   - action: utter_ok
+#   - action: utter_enter_no_of_rooms
+#   - intent: number_rooms
+#   - action: utter_ok
+#   - action: action_find_hotels
+#   - intent: goodbye
+#   - action: utter_goodbye
+
+
+# - story:  # only city given {to ask: checkin-out dates, number of people, rooms}
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: find_hotels/hotels_city_only
+#   - action: action_destination_selection
+#   - intent: ok
+#   - action: utter_ok
+#   - action: utter_enter_checkin_date
+#   - intent: find_hotels/check_indate_only
+#   - action: utter_ok
+#   - action: utter_enter_checkout_date
+#   - intent: find_hotels/check_outdate_only
+#   - action: utter_ok
+#   - action: utter_enter_no_of_people
+#   - intent: number_people
+#   - action: utter_ok
+#   - action: utter_enter_no_of_rooms
+#   - intent: number_rooms
+#   - action: utter_ok
+#   - action: action_find_hotels
+#   - intent: goodbye
+#   - action: utter_goodbye
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
