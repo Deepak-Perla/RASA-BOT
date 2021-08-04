@@ -1,4 +1,4 @@
-# rasa-hotel-chatbot
+# RASA Hotel Chatbot
 A simple chatbot using Rasa.
 
 # About
