@@ -26,4 +26,7 @@ Use the chatbot after training as
 ```bash
 rasa shell
 ```
-
+To run chatbot in localhost
+```bash
+rasa run -m models --enable-api --cors "*"
+```
