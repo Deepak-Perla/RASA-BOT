@@ -1,4 +1,4 @@
-![](https://socialify.git.ci/Deepak-Perla/RASA-BOT/image?description=1&descriptionEditable=An%20Interactive%20Chatbot%20made%20using%20RASA%20Framework%E2%9A%99%EF%B8%8F%E2%9A%99%EF%B8%8F%E2%9A%99%EF%B8%8F&font=Inter&language=1&logo=https%3A%2F%2Fwww.linkpicture.com%2Fq%2Fprofile-pic_5.png&owner=1&pattern=Floating%20Cogs&theme=Dark)
+![[object Object]](https://socialify.git.ci/Deepak-Perla/RASA-BOT/image?font=Inter&language=1&name=1&owner=1&pattern=Floating%20Cogs&theme=Dark)
 
 # RASA Hotel Chatbot
 A simple chatbot using Rasa.
